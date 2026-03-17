@@ -1,8 +1,52 @@
-# React + Vite
+# Praktikum Pertemuan 5
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek e-commerce sederhana menggunakan React + Vite, dibuat untuk praktikum mata kuliah **Component-Based Software Engineering (CBSE)**.
 
-Currently, two official plugins are available:
+## Teknologi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** — framework UI
+- **Vite 5** — build tool
+- **Axios** — HTTP request ke API
+- **React Router DOM** — navigasi antar halaman
+
+## Fitur
+
+- Menampilkan katalog produk dari [FakeStore API](https://fakestoreapi.com)
+- Filter produk berdasarkan kategori
+- Pencarian produk berdasarkan nama
+- Halaman detail produk
+- Keranjang belanja (tambah, hapus, update quantity)
+
+## Struktur Folder
+
+```
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── ProductCard.jsx
+│   ├── SearchBar.jsx
+│   └── Loading.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── ProductDetail.jsx
+│   └── Cart.jsx
+├── services/
+│   └── api.js
+├── context/
+│   └── CartContext.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## Cara Menjalankan
+
+```bash
+# Install dependencies
+npm install
+npm install axios react-router-dom
+
+# Jalankan dev server
+npm run dev
+```
+
+Buka `http://localhost:5173` di browser.
